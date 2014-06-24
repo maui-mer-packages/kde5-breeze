@@ -1,0 +1,128 @@
+Name         : kde5-breeze
+Version      : 4.97.0
+Release      : 1
+Group        : System/Base
+License      : GPLv2+
+Summary      : Artwork, styles and assets for the Breeze visual style for the Plasma Desktop
+Description  : |
+  Artwork, styles and assets for the Breeze visual style for the Plasma Desktop.
+URL          : http://www.kde.org
+SetupOptions : -q -n %{name}-%{version}/upstream
+
+Sources:
+    - "%{name}-%{version}.tar.xz"
+
+RpmLintIgnore:
+    - devel-file-in-non-devel-package
+    - no-changelogname-tag
+    - library-without-ldconfig-postin
+    - library-without-ldconfig-postun
+
+Configure    : none
+Builder      : none
+
+NoFiles      : True
+
+PkgBR:
+    - kde5-rpm-macros
+    - extra-cmake-modules
+    - kf5-kconfig-devel
+    - kf5-kcoreaddons-devel
+PkgConfigBR:
+    - Qt5Core
+    - Qt5DBus
+    - Qt5Xml
+    - Qt5Network
+    - Qt5Gui
+    - Qt5Widgets
+    - Qt5Concurrent
+    - Qt5Test
+
+SubPackages:
+    - Name: kde4
+      Group: System/Base
+      AutoDepend: False
+      Summary: KDE 4 settings for the "Breeze" theme
+      Description: |
+        This package contains KDE 4 settings for the "Breeze" theme.
+      Files:
+          - "%{_kde5_libdir}/kconf_update_bin/*"
+          - "%{_kde5_datadir}/kconf_update/*"
+    - Name: icon-theme
+      Group: System/Base
+      BuildArch: noarch
+      AutoDepend: False
+      Summary: Breeze icon theme
+      Description: |
+        Breeze is the standard icon theme for Plasma, but follows the freedesktop.org
+        icon schemes, so it can be used in other desktop environments using this
+        specification.
+      Files:
+          - "%doc COPYING AUTHORS"
+          - "%{_kde5_datadir}/icons/breeze/*"
+    - Name: cursor-theme
+      Group: System/Base
+      BuildArch: noarch
+      AutoDepend: False
+      Summary: Breeze cursor theme
+      Description: |
+        A full set of cursors for the Breeze visual style.
+      Files:
+          - "%doc cursors/src/README COPYING AUTHORS"
+          - "%{_kde5_datadir}/icons/breeze_cursors/*"
+    - Name: kwin
+      Group: System/Base
+      BuildArch: noarch
+      AutoDepend: False
+      Summary: KWin "Breeze" decoration
+      Description: |
+        This package contains the "Breeze" decoration for KWin.
+      Requires:
+          - kde5-kwin
+      Files:
+          - "%doc COPYING AUTHORS"
+          - "%{_kde5_datadir}/kservices5/kwin/*"
+          - "%{_kde5_datadir}/kwin/decorations/*"
+    - Name: style
+      Group: System/Base
+      BuildArch: noarch
+      AutoDepend: False
+      Summary: QtQuickControls "Breeze" style
+      Description: |
+        This package contains the "Breeze" style for QtQuickControls.
+      Requires:
+          - qt5-qtquickcontrols
+      Files:
+          - "%doc COPYING AUTHORS"
+          - "%{_kde5_libdir}/qml/QtQuick/Controls/Styles/Breeze/*"
+    - Name: color-schemes
+      Group: System/Base
+      BuildArch: noarch
+      AutoDepend: False
+      Summary: Breeze color schemes
+      Description: |
+        This package contains the "Breeze" color schemes.
+      Files:
+          - "%doc COPYING AUTHORS"
+          - "%{_kde5_datadir}/color-schemes/*"
+    - Name: qtcurve
+      Group: System/Base
+      BuildArch: noarch
+      AutoDepend: False
+      Summary: QtCurve "Breeze" theme
+      Description: |
+        This package contains the "Breeze" theme for QtCurve.
+      # TODO: Add qtcurve dependency when available
+      Files:
+          - "%doc COPYING AUTHORS"
+          - "%{_kde5_datadir}/QtCurve/*"
+    - Name: wallpapers
+      Group: System/Base
+      BuildArch: noarch
+      AutoDepend: False
+      Summary: Breeze wallpapers
+      Description: |
+        This package contains wallpapers from the "Breeze" visual style.
+      Files:
+          - "%doc COPYING AUTHORS"
+          - "%{_kde5_datadir}/wallpapers/*"
