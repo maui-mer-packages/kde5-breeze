@@ -46,6 +46,7 @@ This package contains KDE 4 settings for the "Breeze" theme.
 Summary:    Breeze icon theme
 Group:      System/Base
 BuildArch:  noarch
+Requires:   oxygen-icon-theme-scalable
 
 %description icon-theme
 Breeze is the standard icon theme for Plasma, but follows the freedesktop.org

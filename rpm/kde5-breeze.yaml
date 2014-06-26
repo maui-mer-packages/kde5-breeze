@@ -57,6 +57,8 @@ SubPackages:
         Breeze is the standard icon theme for Plasma, but follows the freedesktop.org
         icon schemes, so it can be used in other desktop environments using this
         specification.
+      Requires:
+          - oxygen-icon-theme-scalable
       Files:
           - "%doc COPYING AUTHORS"
           - "%{_kde5_datadir}/icons/breeze/*"
