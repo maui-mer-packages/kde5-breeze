@@ -58,7 +58,7 @@ SubPackages:
         icon schemes, so it can be used in other desktop environments using this
         specification.
       Requires:
-          - oxygen-icon-theme-scalable
+          - oxygen-icon-theme
       Files:
           - "%doc COPYING AUTHORS"
           - "%{_kde5_datadir}/icons/breeze/*"
