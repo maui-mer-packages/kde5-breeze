@@ -96,6 +96,7 @@ This package contains the "Breeze" color schemes.
 Summary:    QtCurve "Breeze" theme
 Group:      System/Base
 BuildArch:  noarch
+Requires:   qtcurve-qt5
 
 %description qtcurve
 This package contains the "Breeze" theme for QtCurve.

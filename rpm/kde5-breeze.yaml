@@ -114,7 +114,8 @@ SubPackages:
       Summary: QtCurve "Breeze" theme
       Description: |
         This package contains the "Breeze" theme for QtCurve.
-      # TODO: Add qtcurve dependency when available
+      Requires:
+          - qtcurve-qt5
       Files:
           - "%doc COPYING AUTHORS"
           - "%{_kde5_datadir}/QtCurve/*"
