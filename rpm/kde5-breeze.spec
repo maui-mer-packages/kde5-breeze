@@ -9,7 +9,7 @@ Name:       kde5-breeze
 # << macros
 
 Summary:    Artwork, styles and assets for the Breeze visual style for the Plasma Desktop
-Version:    4.97.0
+Version:    5.0.0
 Release:    1
 Group:      System/Base
 License:    GPLv2+
@@ -169,7 +169,7 @@ rm -rf %{buildroot}
 %files style
 %defattr(-,root,root,-)
 %doc COPYING AUTHORS
-%{_kde5_libdir}/qml/QtQuick/Controls/Styles/Breeze/*
+%{_kf5_qmldir}/QtQuick/Controls/Styles/Breeze/*
 # >> files style
 # << files style
 

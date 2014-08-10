@@ -1,5 +1,5 @@
 Name         : kde5-breeze
-Version      : 4.97.0
+Version      : 5.0.0
 Release      : 1
 Group        : System/Base
 License      : GPLv2+
@@ -96,7 +96,7 @@ SubPackages:
           - qt5-qtquickcontrols
       Files:
           - "%doc COPYING AUTHORS"
-          - "%{_kde5_libdir}/qml/QtQuick/Controls/Styles/Breeze/*"
+          - "%{_kf5_qmldir}/QtQuick/Controls/Styles/Breeze/*"
     - Name: color-schemes
       Group: System/Base
       BuildArch: noarch
