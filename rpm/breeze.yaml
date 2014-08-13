@@ -80,7 +80,7 @@ SubPackages:
       Description: |
         This package contains the "Breeze" decoration for KWin.
       Requires:
-          - kde5-kwin
+          - kwin
       Files:
           - "%doc COPYING AUTHORS"
           - "%{_kf5_servicesdir}/kwin/*"

@@ -67,7 +67,7 @@ A full set of cursors for the Breeze visual style.
 Summary:    KWin "Breeze" decoration
 Group:      System/Base
 BuildArch:  noarch
-Requires:   kde5-kwin
+Requires:   kwin
 
 %description kwin
 This package contains the "Breeze" decoration for KWin.
