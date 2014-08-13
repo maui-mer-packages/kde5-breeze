@@ -1,4 +1,4 @@
-Name         : kde5-breeze
+Name         : breeze
 Version      : 5.0.0
 Release      : 1
 Group        : System/Base
@@ -24,10 +24,10 @@ Builder      : none
 NoFiles      : True
 
 PkgBR:
-    - kde5-rpm-macros
+    - kf5-rpm-macros
     - extra-cmake-modules
-    - kf5-kconfig-devel
-    - kf5-kcoreaddons-devel
+    - kconfig-devel
+    - kcoreaddons-devel
 PkgConfigBR:
     - Qt5Core
     - Qt5DBus
@@ -46,8 +46,8 @@ SubPackages:
       Description: |
         This package contains KDE 4 settings for the "Breeze" theme.
       Files:
-          - "%{_kde5_libdir}/kconf_update_bin/*"
-          - "%{_kde5_datadir}/kconf_update/*"
+          - "%{_kf5_libdir}/kconf_update_bin/*"
+          - "%{_kf5_sharedir}/kconf_update/*"
     - Name: icon-theme
       Group: System/Base
       BuildArch: noarch
@@ -61,7 +61,7 @@ SubPackages:
           - oxygen-icon-theme
       Files:
           - "%doc COPYING AUTHORS"
-          - "%{_kde5_datadir}/icons/breeze/*"
+          - "%{_kf5_sharedir}/icons/breeze/*"
     - Name: cursor-theme
       Group: System/Base
       BuildArch: noarch
@@ -71,7 +71,7 @@ SubPackages:
         A full set of cursors for the Breeze visual style.
       Files:
           - "%doc cursors/src/README COPYING AUTHORS"
-          - "%{_kde5_datadir}/icons/breeze_cursors/*"
+          - "%{_kf5_sharedir}/icons/breeze_cursors/*"
     - Name: kwin
       Group: System/Base
       BuildArch: noarch
@@ -83,8 +83,8 @@ SubPackages:
           - kde5-kwin
       Files:
           - "%doc COPYING AUTHORS"
-          - "%{_kde5_datadir}/kservices5/kwin/*"
-          - "%{_kde5_datadir}/kwin/decorations/*"
+          - "%{_kf5_servicesdir}/kwin/*"
+          - "%{_kf5_sharedir}/kwin/decorations/*"
     - Name: style
       Group: System/Base
       BuildArch: noarch
@@ -106,7 +106,7 @@ SubPackages:
         This package contains the "Breeze" color schemes.
       Files:
           - "%doc COPYING AUTHORS"
-          - "%{_kde5_datadir}/color-schemes/*"
+          - "%{_kf5_sharedir}/color-schemes/*"
     - Name: qtcurve
       Group: System/Base
       BuildArch: noarch
@@ -118,7 +118,7 @@ SubPackages:
           - qtcurve-qt5
       Files:
           - "%doc COPYING AUTHORS"
-          - "%{_kde5_datadir}/QtCurve/*"
+          - "%{_kf5_sharedir}/QtCurve/*"
     - Name: wallpapers
       Group: System/Base
       BuildArch: noarch
@@ -128,4 +128,4 @@ SubPackages:
         This package contains wallpapers from the "Breeze" visual style.
       Files:
           - "%doc COPYING AUTHORS"
-          - "%{_kde5_datadir}/wallpapers/*"
+          - "%{_kf5_sharedir}/wallpapers/*"
