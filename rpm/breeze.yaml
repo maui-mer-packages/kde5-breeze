@@ -30,6 +30,7 @@ PkgBR:
     - kcoreaddons-devel
     - ki18n-devel
     - kconfig-devel
+    - kconfigwidgets-devel
     - kcompletion-devel
     - frameworkintegration-devel
     - kwindowsystem-devel
