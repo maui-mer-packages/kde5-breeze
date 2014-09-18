@@ -28,6 +28,10 @@ PkgBR:
     - extra-cmake-modules
     - kconfig-devel
     - kcoreaddons-devel
+    - ki18n-devel
+    - kcompletion-devel
+    - frameworkintegration-devel
+    - kwindowsystem-devel
 PkgConfigBR:
     - Qt5Core
     - Qt5DBus
