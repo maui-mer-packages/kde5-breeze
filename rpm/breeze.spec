@@ -36,6 +36,7 @@ BuildRequires:  extra-cmake-modules
 BuildRequires:  kconfig-devel
 BuildRequires:  kcoreaddons-devel
 BuildRequires:  ki18n-devel
+BuildRequires:  kconfig-devel
 BuildRequires:  kcompletion-devel
 BuildRequires:  frameworkintegration-devel
 BuildRequires:  kwindowsystem-devel
