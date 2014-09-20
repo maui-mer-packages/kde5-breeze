@@ -8,12 +8,6 @@ Name:       breeze
 # >> macros
 # << macros
 
-# >> bcond_with
-# << bcond_with
-
-# >> bcond_without
-# << bcond_without
-
 Summary:    Artwork, styles and assets for the Breeze visual style for the Plasma Desktop
 Version:    5.0.0
 Release:    1
@@ -31,6 +25,7 @@ BuildRequires:  pkgconfig(Qt5Gui)
 BuildRequires:  pkgconfig(Qt5Widgets)
 BuildRequires:  pkgconfig(Qt5Concurrent)
 BuildRequires:  pkgconfig(Qt5Test)
+BuildRequires:  pkgconfig(Qt5X11Extras)
 BuildRequires:  kf5-rpm-macros
 BuildRequires:  extra-cmake-modules
 BuildRequires:  kconfig-devel

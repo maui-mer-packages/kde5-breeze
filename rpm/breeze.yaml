@@ -43,6 +43,7 @@ PkgConfigBR:
     - Qt5Widgets
     - Qt5Concurrent
     - Qt5Test
+    - Qt5X11Extras
 
 SubPackages:
     - Name: kde4
