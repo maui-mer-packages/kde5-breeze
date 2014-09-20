@@ -104,6 +104,18 @@ SubPackages:
       Files:
           - "%doc COPYING AUTHORS"
           - "%{_kf5_qmldir}/QtQuick/Controls/Styles/Breeze/*"
+    - Name: kstyle
+      Group: System/Base
+      BuildArch: noarch
+      AutoDepend: False
+      Summary: QtWidgets "Breeze" style
+      Description: |
+        This package contains the "Breeze" style for QtWidgets.
+      Files:
+          - "%doc COPYING AUTHORS"
+          - "%{_kf5_sharedir}/kstyles/themes/*"
+          - "%{_kf5_pluginsdir}/kstyle/*"
+          - "%{_kf5_pluginsdir}/styles/*"
     - Name: color-schemes
       Group: System/Base
       BuildArch: noarch

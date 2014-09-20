@@ -90,6 +90,15 @@ Requires:   qt5-qtquickcontrols
 This package contains the "Breeze" style for QtQuickControls.
 
 
+%package kstyle
+Summary:    QtWidgets "Breeze" style
+Group:      System/Base
+BuildArch:  noarch
+
+%description kstyle
+This package contains the "Breeze" style for QtWidgets.
+
+
 %package color-schemes
 Summary:    Breeze color schemes
 Group:      System/Base
@@ -179,6 +188,15 @@ rm -rf %{buildroot}
 %{_kf5_qmldir}/QtQuick/Controls/Styles/Breeze/*
 # >> files style
 # << files style
+
+%files kstyle
+%defattr(-,root,root,-)
+%doc COPYING AUTHORS
+%{_kf5_sharedir}/kstyles/themes/*
+%{_kf5_pluginsdir}/kstyle/*
+%{_kf5_pluginsdir}/styles/*
+# >> files kstyle
+# << files kstyle
 
 %files color-schemes
 %defattr(-,root,root,-)
