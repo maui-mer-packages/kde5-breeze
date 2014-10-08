@@ -7,7 +7,6 @@ Summary      : Artwork, styles and assets for the Breeze visual style for the Pl
 Description  : |
   Artwork, styles and assets for the Breeze visual style for the Plasma Desktop.
 URL          : http://www.kde.org
-SetupOptions : -q -n %{name}-%{version}/upstream
 
 Sources:
     - "%{name}-%{version}.tar.xz"
