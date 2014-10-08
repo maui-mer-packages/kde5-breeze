@@ -9,7 +9,7 @@ Name:       breeze
 # << macros
 
 Summary:    Artwork, styles and assets for the Breeze visual style for the Plasma Desktop
-Version:    5.0.0
+Version:    5.3.0
 Release:    1
 Group:      System/Base
 License:    GPLv2+
