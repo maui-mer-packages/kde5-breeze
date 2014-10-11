@@ -9,8 +9,8 @@ Name:       breeze
 # << macros
 
 Summary:    Artwork, styles and assets for the Breeze visual style for the Plasma Desktop
-Version:    5.0.95
-Release:    3
+Version:    5.1.0
+Release:    1
 Group:      System/Base
 License:    GPLv2+
 URL:        http://www.kde.org
