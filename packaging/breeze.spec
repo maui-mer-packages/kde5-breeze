@@ -162,7 +162,8 @@ rm -rf %{buildroot}
 %files icon-theme
 %defattr(-,root,root,-)
 %doc COPYING AUTHORS
-%{_kf5_sharedir}/icons/breeze/*
+%{_kf5_sharedir}/icons/breeze*
+%{_kf5_sharedir}/icons/breeze-dark/*
 # >> files icon-theme
 # << files icon-theme
 
