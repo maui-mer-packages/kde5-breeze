@@ -193,7 +193,7 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %doc COPYING AUTHORS
 %{_kf5_sharedir}/kstyle/*
-%{_kf5_plugindir}/kstyle/*
+%{_kf5_plugindir}/kstyle_*
 %{_kf5_plugindir}/styles/*
 # >> files kstyle
 # << files kstyle
