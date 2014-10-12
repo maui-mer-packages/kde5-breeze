@@ -93,7 +93,6 @@ This package contains the "Breeze" style for QtQuickControls.
 %package kstyle
 Summary:    QtWidgets "Breeze" style
 Group:      System/Base
-BuildArch:  noarch
 
 %description kstyle
 This package contains the "Breeze" style for QtWidgets.

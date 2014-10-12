@@ -105,7 +105,6 @@ SubPackages:
           - "%{_kf5_qmldir}/QtQuick/Controls/Styles/Breeze/*"
     - Name: kstyle
       Group: System/Base
-      BuildArch: noarch
       AutoDepend: False
       Summary: QtWidgets "Breeze" style
       Description: |
