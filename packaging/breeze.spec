@@ -10,7 +10,7 @@ Name:       breeze
 
 Summary:    Artwork, styles and assets for the Breeze visual style for the Plasma Desktop
 Version:    5.1.0
-Release:    1
+Release:    2
 Group:      System/Base
 License:    GPLv2+
 URL:        http://www.kde.org
